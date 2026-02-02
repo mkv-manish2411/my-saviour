@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Custom reusable input style */
+.input {
+  @apply w-full p-2 rounded bg-black text-white border border-zinc-700
+         focus:outline-none focus:border-red-600;
+}
