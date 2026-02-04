@@ -1,9 +1,12 @@
 import jwt from "jsonwebtoken";
 
-export const generateToken = (userId: string): string => {
-  return jwt.sign(
-    { userId },
-    process.env.JWT_SECRET as string,
-    { expiresIn: "7d" }
-  );
+type TokenPayload = {
+  id: string;
+  role: "admin" | "org";
+};
+
+export const generateToken = (payload: TokenPayload) => {
+  return jwt.sign(payload, process.env.JWT_SECRET!, {
+    expiresIn: "7d",
+  });
 };

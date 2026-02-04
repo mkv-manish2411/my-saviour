@@ -70,7 +70,7 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section className="px-6 py-20 max-w-6xl mx-auto">
         <h3 className="text-3xl font-bold text-center mb-12">
-          How <span className="text-red-600">My-Savior</span> Works
+          How <span className="text-red-600">My-Saviour</span> Works
         </h3>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-zinc-800 py-6 text-center text-sm text-zinc-500">
-        © {new Date().getFullYear()} My-Savior. All rights reserved.
+        © {new Date().getFullYear()} My-Saviour. All rights reserved.
       </footer>
     </div>
   );

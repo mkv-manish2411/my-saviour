@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import bcrypt from "bcrypt";
 import { pool } from "../config/user";
 import { hashPassword, comparePassword } from "../utils/hash";
 import { generateToken } from "../utils/jwt";
@@ -93,4 +94,7 @@ export const loginUser = async (req: Request, res: Response) => {
     success: true,
     token,
   });
+
+
+
 };
